@@ -1,6 +1,8 @@
 #include <bits/stdc++.h> 
+using namespace std;
 #include<iostream>
 #include<string>
+#include<string.h>
 
 
 char lowercase(char a)
@@ -50,5 +52,9 @@ bool checkPalindrome(string s)
 
 int main()
 {
-    String s= "abcba";
+    string s= "abcb";
+    if(checkPalindrome(s))
+    cout<<"Palindrom";
+    else
+    cout<<"Not Palindrom";
 }

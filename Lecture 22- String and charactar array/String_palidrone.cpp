@@ -3,6 +3,7 @@ using namespace std;
 #include<iostream>
 #include<string>
 #include<string.h>
+#include<vector>
 
 
 char lowercase(char a)
@@ -36,7 +37,7 @@ bool checkPalindrome(string s)
    int e=temp.length()-1;
 
 
-   while(sa>e)
+   while(sa<e)
    {
        if(temp[sa]!=temp[e])
        {
@@ -52,7 +53,7 @@ bool checkPalindrome(string s)
 
 int main()
 {
-    string s= "abcb";
+    string s= "abcba";
     if(checkPalindrome(s))
     cout<<"Palindrom";
     else

@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
-string reverse(int i,int j,string s){
-    if(i>j){
-        return s;
+void reverse(int i, string& s){
+    if(i>s.length()-i-1){
+        return ;
     }
-    swap(s[i],s[j]);
+    swap(s[i],s[s.length()-i-1]);
     
-    return reverse(++i,--j,s);
+    reverse(++i,s);
 }
 
 int main() {
     string name = "yash";
     int i=0;
     int j= name.length()-1;
-    string r = reverse(i,j,name);
-    cout<<r;
+    reverse(i,name);
+    cout<<name;
     return 0;
 }

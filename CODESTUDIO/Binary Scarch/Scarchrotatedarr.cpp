@@ -57,6 +57,7 @@ int main()
     int n=5;
    int  k=7;
     int pivot = getPivot(arr, n);
+    
     if( k >= arr[pivot] && k <= arr[n-1])
     {//BS on second line
         cout<< binarySearch(arr, pivot, n-1, k);

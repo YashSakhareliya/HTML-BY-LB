@@ -1,2 +1,2 @@
-InsertAttail(tail,50);
+// InsertAttail(tail,50);
     // InsertAthead(head,0);

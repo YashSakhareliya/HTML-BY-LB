@@ -25,7 +25,7 @@ Node* implement(Node* root){
     cout<<"Enter the data left of"<<data;
     root->left = implement(root->left);
     cout<<"Enetr the data right of "<<data;
-    root->left = implement(root->right);
+    root->right = implement(root->right);
     return root;
 }
 
